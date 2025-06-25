@@ -177,9 +177,8 @@ body.dark-mode .cursor {
 body.dark-mode .hero-tagline {
   color: var(--primary-color);
 }
-/* FIXED: Styles for the special hero buttons to ensure high contrast in both themes */
 .hero-button {
-  background-color: var(--hero-btn-bg) !important; /* !important to override potential conflicts */
+  background-color: var(--hero-btn-bg) !important;
   color: var(--hero-btn-text) !important;
   border: 2px solid transparent;
   font-weight: 500;
@@ -261,8 +260,15 @@ body.dark-mode .image-overlay {
   --primary-color-trans: rgba(96, 165, 250, 0.25);
   --secondary-color-trans: rgba(16, 185, 129, 0.25);
 }
-.profile-image-container:hover .image-overlay { opacity: 1; }
-.profile-image-container:hover img { transform: scale(1.02); }
+
+/* FIX: This line, which made the color overlay visible on hover, is now commented out. */
+/* .profile-image-container:hover .image-overlay { opacity: 1; } */
+
+/* This rule provides the "lift" and "scale" hover effect for the photo itself. */
+.profile-image-container:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px var(--shadow-color);
+}
 .card-content-box {
   background-color: var(--card-content-box-bg);
   border: 1px solid var(--border-color);
@@ -332,7 +338,6 @@ body.dark-mode .image-overlay {
   font-size: 0.8rem;
   border: 1px solid var(--primary-color);
 }
-/* FIXED: Made project buttons solid by default for better visibility. */
 .btn-project-live,
 .btn-project-github {
   background-color: var(--primary-color);
@@ -340,7 +345,6 @@ body.dark-mode .image-overlay {
   border: 1px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
-
 
 /* Education.js */
 #education {
@@ -486,16 +490,13 @@ body.dark-mode .image-overlay {
    with a special effect for the main hero buttons. */
 
 /* --- HERO BUTTONS: GLOW & LIFT --- */
-/* Applies ONLY to: View Projects, Get in Touch */
 .hero-button:hover {
   transform: translateY(-3px);
-  /* The new shadow combines a stronger depth shadow with a colored glow */
   box-shadow: var(--hero-btn-shadow-hover), 0 0 12px var(--primary-color);
 }
 
 
 /* --- Solid Buttons --- */
-/* Applies to: Download Resume, Submit, and now the Project buttons. */
 .btn-resume-download:hover,
 .btn-submit:hover,
 .btn-project-live:hover,
@@ -506,12 +507,24 @@ body.dark-mode .image-overlay {
 
 
 /* --- Outline / Transparent Buttons --- */
-/* Applies to: View Resume */
 .btn-resume-view:hover {
-  /* On hover, fill the button with the theme's primary color */
   background-color: var(--primary-color);
-  /* And change the text color to white for perfect contrast */
   color: #ffffff !important;
   border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.btn-project-live,
+.btn-project-github {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.btn-resume-download:hover,
+.btn-submit:hover,
+.btn-project-live:hover,
+.btn-project-github:hover {
+  filter: brightness(90%);
   transform: translateY(-2px);
 }
