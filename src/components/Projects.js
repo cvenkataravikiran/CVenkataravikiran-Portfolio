@@ -13,7 +13,7 @@ function Projects() {
       description: 'I designed this portfolio using React that would be more than a resume. It\'s a reflection of my professional journey. I focused on a clean, responsive design, and every detail, from the persistent dark mode to the seamless contact form, was chosen to showcase my commitment to creating user-centric experiences.',
       image: '/images/portfolio.png',
       technologies: ['React', 'JavaScript (ES6+)', 'Bootstrap', 'CSS3', 'HTML5', 'Node.js', 'Web3Forms API'],
-      liveLink: 'https://cvenkataravikiran-portfolio.vercel.app/#', 
+      liveLink: 'https://cvenkataravikiran-portfolio.vercel.app/', 
       githubLink: '#https://github.com/cvenkataravikiran/CVenkataravikiran-Portfolio.git'
     },
 
