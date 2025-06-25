@@ -13,8 +13,7 @@ function AppContent() {
   const { isDarkMode } = useTheme();
 
   useEffect(() => {
-    document.title = "CVENKATARAVIKIRAN PORTFOLIO";
-    // Toggle dark-mode class on the body
+      // Toggle dark-mode class on the body
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
     } else {
