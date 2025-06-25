@@ -30,10 +30,12 @@
   --skill-item-bg: rgba(0, 123, 255, 0.1);
   --skill-item-border: rgba(0, 123, 255, 0.2);
   --footer-bg: #f8f9fa;
+
+  /* Styles for the special Hero Buttons */
   --hero-btn-bg: #1a1a1a;
   --hero-btn-text: #ffffff;
   --hero-btn-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --hero-btn-shadow-hover: 0 6px 8px rgba(0, 0, 0, 0.2);
+  --hero-btn-shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode {
@@ -52,7 +54,7 @@ body.dark-mode {
   --success-color: #00e676;
   --error-color: #ef4444;
   --warning-color: #f59e0b;
-  
+
   /* Specific Component Overrides */
   --badge-bg: rgba(187, 134, 252, 0.1);
   --card-content-box-bg: rgba(255, 255, 255, 0.05);
@@ -65,10 +67,12 @@ body.dark-mode {
   --skill-item-bg: rgba(187, 134, 252, 0.1);
   --skill-item-border: rgba(187, 134, 252, 0.2);
   --footer-bg: #1a1a1a;
+
+  /* Styles for the special Hero Buttons in Dark Mode */
   --hero-btn-bg: #ffffff;
   --hero-btn-text: #1a1a1a;
-  --hero-btn-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-  --hero-btn-shadow-hover: 0 6px 8px rgba(255, 255, 255, 0.2);
+  --hero-btn-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --hero-btn-shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* ==========================================================================
@@ -173,17 +177,14 @@ body.dark-mode .cursor {
 body.dark-mode .hero-tagline {
   color: var(--primary-color);
 }
+/* FIXED: Styles for the special hero buttons to ensure high contrast in both themes */
 .hero-button {
-  background-color: var(--hero-btn-bg);
+  background-color: var(--hero-btn-bg) !important; /* !important to override potential conflicts */
   color: var(--hero-btn-text) !important;
-  transition: all 0.3s ease-in-out;
-  border: none;
+  border: 2px solid transparent;
   font-weight: 500;
   box-shadow: var(--hero-btn-shadow);
-}
-.hero-button:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--hero-btn-shadow-hover);
+  transition: all 0.3s ease-in-out;
 }
 .code-window {
   background-color: var(--card-bg);
@@ -331,17 +332,15 @@ body.dark-mode .image-overlay {
   font-size: 0.8rem;
   border: 1px solid var(--primary-color);
 }
-.btn-project-live {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  transition: all 0.3s ease-in-out;
-}
+/* FIXED: Made project buttons solid by default for better visibility. */
+.btn-project-live,
 .btn-project-github {
-  background-color: transparent;
+  background-color: var(--primary-color);
+  color: #ffffff !important;
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
+
 
 /* Education.js */
 #education {
@@ -457,3 +456,62 @@ body.dark-mode .image-overlay {
   transition: all 0.3s ease-in-out;
 }
 .site-footer .social-link-item:hover { color: var(--primary-color); }
+
+
+/* ==========================================================================
+   4. Button State Fixes (Active & Focus)
+   ========================================================================== */
+.hero-button:active,
+.hero-button:focus,
+.btn-project-live:active,
+.btn-project-live:focus,
+.btn-project-github:active,
+.btn-project-github:focus,
+.btn-resume-view:active,
+.btn-resume-view:focus,
+.btn-resume-download:active,
+.btn-resume-download:focus,
+.btn-submit:active,
+.btn-submit:focus {
+  box-shadow: none !important;
+  outline: 2px solid var(--primary-color) !important;
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   5. Button Hover State Fixes (LATEST UPDATE)
+   ========================================================================== */
+
+/* This section defines the hover behavior for all buttons,
+   with a special effect for the main hero buttons. */
+
+/* --- HERO BUTTONS: GLOW & LIFT --- */
+/* Applies ONLY to: View Projects, Get in Touch */
+.hero-button:hover {
+  transform: translateY(-3px);
+  /* The new shadow combines a stronger depth shadow with a colored glow */
+  box-shadow: var(--hero-btn-shadow-hover), 0 0 12px var(--primary-color);
+}
+
+
+/* --- Solid Buttons --- */
+/* Applies to: Download Resume, Submit, and now the Project buttons. */
+.btn-resume-download:hover,
+.btn-submit:hover,
+.btn-project-live:hover,
+.btn-project-github:hover {
+  filter: brightness(90%);
+  transform: translateY(-2px);
+}
+
+
+/* --- Outline / Transparent Buttons --- */
+/* Applies to: View Resume */
+.btn-resume-view:hover {
+  /* On hover, fill the button with the theme's primary color */
+  background-color: var(--primary-color);
+  /* And change the text color to white for perfect contrast */
+  color: #ffffff !important;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
