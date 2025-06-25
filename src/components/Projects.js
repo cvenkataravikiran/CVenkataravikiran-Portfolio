@@ -14,7 +14,7 @@ function Projects() {
       image: '/images/portfolio.png',
       technologies: ['React', 'JavaScript (ES6+)', 'Bootstrap', 'CSS3', 'HTML5', 'Node.js', 'Web3Forms API'],
       liveLink: 'https://cvenkataravikiran-portfolio.vercel.app/', 
-      githubLink: '#https://github.com/cvenkataravikiran/CVenkataravikiran-Portfolio.git'
+      githubLink: 'https://github.com/cvenkataravikiran/CVenkataravikiran-Portfolio.git'
     },
 
     { title: 'Smart Healthcare Web Application', 
