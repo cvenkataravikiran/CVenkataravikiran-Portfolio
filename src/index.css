@@ -592,24 +592,16 @@ body.dark-mode .image-overlay {
    ========================================================================== */
 
 /* ==========================================================================
-   6. Responsive Adjustments (Mobile Fixes)
+   6. Responsive Adjustments
    ========================================================================== */
-
-@media (max-width: 991.98px) { /* Applies to screens smaller than large (Bootstrap's 'lg' breakpoint) */
-
-  /* --- HERO SECTION VISIBILITY FIX --- */
+@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
   #home {
-    /* This is the key fix: Add enough padding to push content below the fixed navbar */
     padding-top: 120px !important; 
-    text-align: center; /* Center align all hero content on mobile */
+    text-align: center;
   }
-
-  /* --- Center the Hero Buttons --- */
   #home .d-flex {
     justify-content: center; 
   }
-
-  /* --- NAVBAR MENU FIX --- */
   .navbar-collapse.show {
     background-color: var(--navbar-bg);
     margin-top: 10px;
@@ -617,39 +609,48 @@ body.dark-mode .image-overlay {
     border-radius: 8px;
     box-shadow: 0 5px 15px var(--shadow-color);
   }
-
   .navbar-nav .nav-item {
     text-align: center;
     margin-bottom: 0.5rem;
   }
-  
-  /* --- HERO ILLUSTRATION FIX --- */
   .code-window {
-    transform: none; /* Remove the 3D rotation on mobile */
-    animation: none; /* Disable the floating animation on mobile */
-    max-width: 100%; /* Ensure the window doesn't overflow the screen */
+    transform: none;
+    animation: none;
+    max-width: 100%;
   }
-
   .code-content {
-    font-size: 0.85rem; /* Slightly smaller font for the code */
-    word-wrap: break-word; /* Ensure long lines of code can wrap */
+    font-size: 0.85rem;
+    word-wrap: break-word;
   }
 }
 
-@media (max-width: 767.98px) { /* Applies to screens smaller than medium */
-
-  /* --- HERO FONT SIZE FIX --- */
+@media (max-width: 767.98px) { /* Small devices (landscape phones, less than 768px) */
+  h1, .h1 { font-size: 2.25rem; }
+  h2, .h2 { font-size: 1.8rem; }
+  h3, .h3 { font-size: 1.5rem; }
+  
   #home h1 {
-    font-size: 2.5rem; /* Reduce the main heading font size */
+    font-size: 2.5rem;
   }
-
   .hero-subtitle {
-    font-size: 1.1rem; /* Adjust subtitle font size */
-    justify-content: center; /* Ensure the typing text is centered */
-    min-height: 50px; /* Give it a bit more space to avoid layout shifts */
+    font-size: 1.1rem;
+    justify-content: center;
+    min-height: 50px;
   }
 }
 
+@media (max-width: 576px) { /* Extra small devices (portrait phones, less than 576px) */
+  /* FIX: Stacks certificate title and date badge for better readability on mobile */
+  .certificate-card .d-flex {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .certificate-card .badge {
+    margin-left: 0 !important;
+    margin-top: 0.75rem;
+  }
+}
 /* /* ==========================================================================
    7. Mobile Navbar Layout Fix
    ========================================================================== */
