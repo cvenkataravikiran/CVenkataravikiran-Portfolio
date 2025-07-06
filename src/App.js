@@ -4,6 +4,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
@@ -28,6 +29,7 @@ function AppContent() {
       <Skills />
       <Projects />
       <Education />
+      <Certificates />
       <Resume />
       <Contact />
       <Footer />
