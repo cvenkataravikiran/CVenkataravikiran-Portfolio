@@ -260,11 +260,6 @@ body.dark-mode .image-overlay {
   --primary-color-trans: rgba(96, 165, 250, 0.25);
   --secondary-color-trans: rgba(16, 185, 129, 0.25);
 }
-
-/* FIX: This line, which made the color overlay visible on hover, is now commented out. */
-/* .profile-image-container:hover .image-overlay { opacity: 1; } */
-
-/* This rule provides the "lift" and "scale" hover effect for the photo itself. */
 .profile-image-container:hover img {
   transform: scale(1.03);
   box-shadow: 0 15px 40px var(--shadow-color);
@@ -438,7 +433,13 @@ body.dark-mode .image-overlay {
   border: none;
   transition: all 0.3s ease-in-out;
 }
-.btn-submit:disabled { opacity: 0.7; }
+.btn-submit:disabled {
+  background-color: var(--primary-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
 .social-link {
   color: var(--primary-color);
   display: inline-block;
@@ -483,11 +484,8 @@ body.dark-mode .image-overlay {
 }
 
 /* ==========================================================================
-   5. Button Hover State Fixes (LATEST UPDATE)
+   5. Button Hover State Fixes
    ========================================================================== */
-
-/* This section defines the hover behavior for all buttons,
-   with a special effect for the main hero buttons. */
 
 /* --- HERO BUTTONS: GLOW & LIFT --- */
 .hero-button:hover {
@@ -495,36 +493,43 @@ body.dark-mode .image-overlay {
   box-shadow: var(--hero-btn-shadow-hover), 0 0 12px var(--primary-color);
 }
 
-
-/* --- Solid Buttons --- */
+/* --- Special rule for the Resume Download Button --- */
 .btn-resume-download:hover,
-.btn-submit:hover,
-.btn-project-live:hover,
-.btn-project-github:hover {
+.btn-resume-download:focus,
+.btn-resume-download:active {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
   filter: brightness(90%);
   transform: translateY(-2px);
 }
 
+/* --- Special rule for the Submit Button --- */
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  filter: brightness(90%);
+  transform: translateY(-2px);
+}
+
+/* --- Special rule for Project Buttons --- */
+.btn-project-live:hover,
+.btn-project-live:focus,
+.btn-project-live:active,
+.btn-project-github:hover,
+.btn-project-github:focus,
+.btn-project-github:active {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  filter: brightness(90%);
+  transform: translateY(-2px);
+}
 
 /* --- Outline / Transparent Buttons --- */
 .btn-resume-view:hover {
   background-color: var(--primary-color);
   color: #ffffff !important;
   border-color: var(--primary-color);
-  transform: translateY(-2px);
-}
-
-.btn-project-live,
-.btn-project-github {
-  background-color: var(--primary-color) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--primary-color);
-  transition: all 0.3s ease-in-out;
-}
-.btn-resume-download:hover,
-.btn-submit:hover,
-.btn-project-live:hover,
-.btn-project-github:hover {
-  filter: brightness(90%);
   transform: translateY(-2px);
 }

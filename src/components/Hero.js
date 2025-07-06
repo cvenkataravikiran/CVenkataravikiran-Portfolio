@@ -51,7 +51,7 @@ function Hero() {
                 <a href="#contact" className="btn btn-lg hero-button">Get in Touch</a>
               </div>
             </div>
-            <div className="col-lg-6 d-none d-lg-block text-center">
+            <div className="col-lg-6 text-center mt-5 mt-lg-0">
               <div className="hero-illustration position-relative">
                 <div className="code-window">
                   <div className="window-header">
