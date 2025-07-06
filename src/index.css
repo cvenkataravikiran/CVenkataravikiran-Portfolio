@@ -365,9 +365,6 @@ body.dark-mode .image-overlay {
 .education-card h4 { color: var(--secondary-color); }
 .education-card p { color: var(--muted-text); }
 
-/* === ADD THIS NEW SECTION FOR CERTIFICATES === */
-/* === ADD THIS NEW SECTION FOR CERTIFICATES === */
-
 /* Certificates.js */
 #certificates {
   background-color: var(--background-color);
@@ -387,14 +384,20 @@ body.dark-mode .image-overlay {
   transform: translateY(-3px);
   box-shadow: 0 6px 10px var(--shadow-color);
 }
+
+/* Certificate Title: Remains Blue */
 .certificate-card h3 { 
   color: var(--primary-color); 
 }
+
+/* Issuer Name: Set to Green (using your theme's secondary color) */
 .certificate-card h4 {
-  color: var(--secondary-color); /* This is the fix */
-  font-size: 0.9rem;
+  color: var(--secondary-color); /* This is the fix for green */
   font-weight: 400;
+  font-size: 0.9rem;
 }
+
+/* Date Badge: Remains styled with the Blue theme */
 .certificate-card .badge {
   background-color: var(--badge-bg);
   color: var(--primary-color);
@@ -402,8 +405,10 @@ body.dark-mode .image-overlay {
   padding: 0.5em 0.75em;
   font-weight: 500;
 }
+
+/* "View Certificate" Link: Remains Blue to match the title */
 .certificate-link {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
