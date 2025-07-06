@@ -6,7 +6,7 @@ function Education() {
       period: '2022 - 2025', 
       degree: 'Bachelor of Science (B.Sc) - Major in Computer Science, Mathematics & Statistics',
       institution: 'Indian Institute of Management and Commerce', 
-      grade: 'GPA: 8.76/10'
+      grade: 'CGPA: 8.81/10'
     },
     { 
       period: '2020 - 2022', 
@@ -18,7 +18,7 @@ function Education() {
       period: '2020', 
       degree: 'SSC', 
       institution: 'Nirmala High School', 
-      grade: 'GPA: 9.8/10'
+      grade: 'CGPA: 9.8/10'
     },
   ];
 
