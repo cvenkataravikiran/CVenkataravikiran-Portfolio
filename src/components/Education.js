@@ -12,7 +12,7 @@ function Education() {
       period: '2020 - 2022', 
       degree: 'Intermediate (M.P.C)', 
       institution: 'Sri Gayatri Junior College', 
-      grade: 'Percentage: 86.9%'
+      grade: 'Score: 869/1000'
     },
     { 
       period: '2020', 
