@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#home" onClick={closeMenu}>
-          Challa Venkata Ravi Kiran Portfolio
+        Portfolio
         </a>
         <button
           className="navbar-toggler" type="button" onClick={toggleMenu}
