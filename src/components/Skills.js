@@ -19,7 +19,7 @@ function Skills() {
     skills: [
       { name: 'Artificial Intelligence', icon: 'fas fa-brain' },
       { name: 'Machine Learning', icon: 'fas fa-robot' },
-      { name: 'Generative AI', icon: 'fas fa-magic' },
+      { name: 'Generative AI', icon: 'fas fa-wand-magic-sparkles' },
       { name: 'Prompt Engineering', icon: 'fas fa-keyboard' },
     ]
   },
