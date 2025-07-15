@@ -23,7 +23,7 @@ function Navbar() {
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto align-items-center">
-            {['Home', 'About', 'Skills', 'Projects', 'Education','Certificates', 'Resume', 'Contact'].map((item) => (
+            {['Home', 'About', 'Skills', 'Projects', 'Education','Certifications', 'Resume', 'Contact'].map((item) => (
               <li className="nav-item" key={item}>
                 <a className="nav-link" href={`#${item.toLowerCase()}`} onClick={closeMenu}>
                   {item}

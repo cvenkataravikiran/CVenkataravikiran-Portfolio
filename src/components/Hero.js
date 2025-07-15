@@ -8,8 +8,12 @@ function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const roles = [
-    'Fresher', 'Bsc Computer Science Graduate', 'Aspiring Software Developer',
-    'Full Stack Developer', 'AI/ML Enthusiastic', 'Team Leader & Effective Communicator'
+  'Full Stack Developer',
+  'AI/ML Explorer',
+  'Problem Solver Through Code',
+  'Future-Ready Technologist',
+  'Team Leader & Communicator',
+  'Builder of Purposeful Tech'
   ];
 
   useEffect(() => {
@@ -66,6 +70,7 @@ function Hero() {
                     <p className="property">frontend: ['React', 'Bootstrap', 'JavaScript'],</p>
                     <p className="property">backend: ['Python', 'Flask', 'Node.js', 'Express', 'MongoDB', 'SQLite'],</p>
                     <p className="property">design: ['UI/UX', 'Responsive']</p>
+                    <p className="property">AI & ML: ['AI','ML', 'GenAI', 'Prompt-Engineering']</p>
                     <p>{`}`};</p>
                   </div>
                    {/* === UPDATED SECTION END === */}

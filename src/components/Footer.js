@@ -12,7 +12,7 @@ function Footer() {
         <div className="row align-items-center">
           <div className="col-md-4 text-center text-md-start mb-3 mb-md-0">
             <h3 className="h6 mb-0">Challa Venkata Ravi Kiran</h3>
-            <p className="small mb-0">Aspiring Software Developer</p>
+            <p className="small mb-0">Full Stack Developer, AI/ML Explorer</p>
           </div>
           <div className="col-md-4 text-center mb-3 mb-md-0">
             <div className="d-flex justify-content-center gap-3">

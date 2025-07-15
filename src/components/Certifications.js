@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Certificates() {
+function Certifications() {
   // --- Add your certificate data here ---
   const certificatesData = [
     {
@@ -44,9 +44,9 @@ function Certificates() {
   );
 
   return (
-    <section id="certificates" className="py-5">
+    <section id="certifications" className="py-5">
       <div className="container py-5">
-        <h2 className="text-center mb-5 section-title">My Certificates</h2>
+        <h2 className="text-center mb-5 section-title">My Certifications</h2>
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <div className="certificate-timeline">
@@ -61,4 +61,4 @@ function Certificates() {
   );
 }
 
-export default Certificates;
+export default Certifications;
