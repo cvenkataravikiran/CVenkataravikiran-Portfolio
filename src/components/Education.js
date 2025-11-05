@@ -3,9 +3,9 @@ import React from 'react';
 function Education() {
   const education = [
     { 
-      period: '2025 - 2027', 
-      degree: 'Master of Computer Applictions,
-      institution: 'A.V.College of Arts, Science & Commerce' 
+     period: '2025 - 2027', 
+     degree: 'Master of Computer Applications',
+     institution: 'A.V. College of Arts, Science & Commerce',  
       // grade: 'CGPA: 8.81/10'
     },
     { 
