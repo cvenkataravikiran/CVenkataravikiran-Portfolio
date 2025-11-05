@@ -3,6 +3,12 @@ import React from 'react';
 function Education() {
   const education = [
     { 
+      period: '2025 - 2027', 
+      degree: 'Master of Computer Applictions,
+      institution: 'A.V. College of Arts, Science & Commerce' 
+      // grade: 'CGPA: 8.81/10'
+    },
+    { 
       period: '2022 - 2025', 
       degree: 'Bachelor of Science (B.Sc) - Major in Computer Science, Mathematics & Statistics',
       institution: 'Indian Institute of Management and Commerce', 
