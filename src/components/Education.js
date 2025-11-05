@@ -5,7 +5,7 @@ function Education() {
     { 
       period: '2025 - 2027', 
       degree: 'Master of Computer Applictions,
-      institution: 'A.V. College of Arts, Science & Commerce' 
+      institution: 'A.V.College of Arts, Science & Commerce' 
       // grade: 'CGPA: 8.81/10'
     },
     { 
