@@ -10,6 +10,7 @@ function Hero() {
   const roles = [
   'Full Stack Developer',
   'AI/ML Explorer',
+  'Data Enthusiast',
   'Problem Solver Through Code',
   'Future-Ready Technologist',
   'Team Leader & Communicator',
