@@ -4,6 +4,12 @@ function Certifications() {
   // --- Add your certificate data here ---
   const certificatesData = [
     {
+      name: ' Data Analytics using Power BI',
+      issuer: 'A.V.College of Arts, Science & Commerce (Autonomous)',
+      date: 'Issued November 2025',
+      link: 'https://drive.google.com/file/d/130w7aJqz6OiVSRQmbmzLsLC6AvsX5ST8/view?usp=drivesdk'
+    },
+    {
       name: ' Postman API Fundamentals Student Expert',
       issuer: 'Postman Student Expert Program',
       date: 'Issued June 2025',
