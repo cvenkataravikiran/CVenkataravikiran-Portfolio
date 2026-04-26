@@ -3,7 +3,7 @@ import React from 'react';
 function Projects() {
   const projects = [
      {
-  title: ' RecruitFlow– Full-Stack Recruitment Management Platform',
+  title: 'RecruitFlow - Recruitment & Interview Management System',
   description: 'I built a comprehensive recruitment platform that streamlines the entire hiring process from job posting to candidate selection. The system features role-based authentication for candidates, recruiters, and admins, with an applicant tracking system, interview scheduling and real-time notifications. It includes advanced job search, resume management, application status tracking and a modern responsive UI with analytics dashboards.',
   image: '/images/recruit-flow.png',
   technologies: ['Django', 'Python', 'SQLite', 'Bootstrap 5', 'JavaScript', 'HTML5', 'CSS3', 'Web3Forms API', 'Django Auth'],
