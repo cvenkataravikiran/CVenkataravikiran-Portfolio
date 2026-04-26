@@ -3,53 +3,51 @@ import React from 'react';
 function Skills() {
   const skillCategories = [
   { 
-    title: 'Programming Languages', 
+    title: 'Programming', 
     skills: [
       { name: 'Python', icon: 'fab fa-python' },
       { name: 'JavaScript', icon: 'fab fa-js' },
-      { name: 'Java', icon: 'fab fa-java' },
-      { name: 'C++', icon: 'fas fa-code' },
       { name: 'SQL', icon: 'fas fa-database' },
       { name: 'HTML5', icon: 'fab fa-html5' },
       { name: 'CSS3', icon: 'fab fa-css3-alt' }
     ]
   },
+
   { 
-    title: 'AI & ML', 
+    title: 'Backend Development', 
     skills: [
-      { name: 'Artificial Intelligence', icon: 'fas fa-brain' },
-      { name: 'Machine Learning', icon: 'fas fa-robot' },
-      { name: 'Generative AI', icon: 'fas fa-wand-magic-sparkles' },
-      { name: 'Prompt Engineering', icon: 'fas fa-keyboard' },
+      { name: 'Flask', icon: 'fas fa-code' },
+      { name: 'REST APIs', icon: 'fas fa-cogs' },
+      { name: 'API Design', icon: 'fas fa-network-wired' },
+      { name: 'JWT Auth', icon: 'fas fa-key' }
     ]
   },
+
   { 
     title: 'Frameworks & Libraries', 
     skills: [
       { name: 'React.js', icon: 'fab fa-react' },
-      { name: 'Flask', icon: 'fas fa-code' },
-      { name: 'Node.js', icon: 'fab fa-node-js' },
-      { name: 'Express.js', icon: 'fas fa-server' },
       { name: 'Bootstrap', icon: 'fab fa-bootstrap' },
       { name: 'Pandas', icon: 'fas fa-table' },
       { name: 'NumPy', icon: 'fas fa-square-root-alt' }
     ]
   },
+
   {
-    title: 'Databases & APIs',
+    title: 'Databases',
     skills: [
       { name: 'MongoDB', icon: 'fas fa-database' },
-      { name: 'SQLite', icon: 'fas fa-database' },
-      { name: 'REST API', icon: 'fas fa-cogs' }
+      { name: 'SQLite', icon: 'fas fa-database' }
     ]
   },
+
   {
-    title: 'Tools & Development', 
-    skills: [ 
-      { name: 'Git', icon: 'fab fa-git-alt' }, 
+    title: 'Tools',
+    skills: [
+      { name: 'Git', icon: 'fab fa-git-alt' },
       { name: 'GitHub', icon: 'fab fa-github' },
       { name: 'VS Code', icon: 'fas fa-code' },
-      { name: 'JWT', icon: 'fas fa-key' }
+      { name: 'Postman', icon: 'fas fa-paper-plane' }
     ]
   }
 ];
