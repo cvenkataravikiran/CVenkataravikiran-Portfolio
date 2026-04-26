@@ -4,21 +4,21 @@ function Projects() {
   const projects = [
      {
   title: 'RecruitFlow - Recruitment & Interview Management System',
-  description: 'I built a comprehensive recruitment platform that streamlines the entire hiring process from job posting to candidate selection. The system features role-based authentication for candidates, recruiters, and admins, with an applicant tracking system, interview scheduling and real-time notifications. It includes advanced job search, resume management, application status tracking and a modern responsive UI with analytics dashboards.',
+  description: 'Built a recruitment platform with applicant tracking, interview scheduling, role-based authentication and admin dashboards.',
   image: '/images/recruit-flow.png',
   technologies: ['Django', 'Python', 'SQLite', 'Bootstrap 5', 'JavaScript', 'HTML5', 'CSS3', 'Web3Forms API', 'Django Auth'],
   liveLink: 'https://recruitflow-oz8p.onrender.com/',
   githubLink: 'https://github.com/cvenkataravikiran/RecruitFlow.git'
      },
     { title: 'CareerPath AI: Intelligent Career Roadmap Generator',
-       description: 'I created an app that turns career ambiguity into an actionable plan. Using AI, it analyzes a resume or job title to generate a clear roadmap for users. The platform also includes a dynamic dashboard to track tasks and a chat-based AI career coach for instant advice.',
+       description: 'Developed an AI-powered platform that analyzes resumes and generates personalized career roadmaps with chatbot support.',
        image: '/images/careerpath-ai.png',
         technologies: ['React', 'Python', 'Flask', 'MongoDB', 'RESTful APIs', 'AI (Groq API / Llama 3)', 'JWT Authentication', 'Cloudinary'],
          liveLink: 'https://career-path-ai-ochre.vercel.app/', 
          githubLink: 'https://github.com/cvenkataravikiran/CareerPath-AI-Frontend' },
     {
       title: 'My Personal Portfolio',
-      description: 'I designed this portfolio using React that would be more than a resume. It\'s a reflection of my professional journey. I focused on a clean, responsive design, and every detail, from the persistent dark mode to the seamless contact form, was chosen to showcase my commitment to creating user-centric experiences.',
+      description: 'Designed a responsive developer portfolio showcasing projects, skills, resume and contact integration.',
       image: '/images/portfolio.png',
       technologies: ['React', 'JavaScript (ES6+)', 'Bootstrap', 'CSS3', 'HTML5', 'Node.js', 'Web3Forms API'],
       liveLink: 'https://cvenkataravikiran-portfolio.vercel.app/', 
@@ -26,7 +26,7 @@ function Projects() {
     },
 
     { title: 'Smart Healthcare Web Application', 
-    description: 'A comprehensive healthcare platform featuring symptom checking, hospital locator, and health tracking capabilities. Built with modern web technologies and focused on user experience.',
+    description: 'Built a healthcare platform with symptom checker, hospital locator, calorie tracker and user dashboard.',
      image: '/images/smart-healthcare.png',
      technologies: ['React', 'Node.js', 'Express.js', 'SQLite', 'Google Maps API', 'Bootstrap CSS', 'JavaScript', 'HTML', 'CSS'],
      liveLink: 'https://drive.google.com/file/d/1dnLfl8pd3IZf-EHRgDO3GqoGCMc5Sv9u/view?usp=drive_link',

@@ -8,13 +8,11 @@ function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const roles = [
+    'Python Backend Developer',
     'Full Stack Developer',
-    'AI/ML Explorer',
-    'Data Enthusiast',
+    'REST API Builder',
     'Problem Solver Through Code',
-    'Future-Ready Technologist',
-    'Team Leader & Communicator',
-    'Builder of Purposeful Tech'
+    'Building Real-World Web Apps'
   ];
 
   useEffect(() => {
