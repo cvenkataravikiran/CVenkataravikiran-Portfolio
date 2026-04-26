@@ -2,6 +2,14 @@ import React from 'react';
 
 function Projects() {
   const projects = [
+     {
+  title: ' RecruitFlow– Full-Stack Recruitment Management Platform',
+  description: 'I built a comprehensive recruitment platform that streamlines the entire hiring process from job posting to candidate selection. The system features role-based authentication for candidates, recruiters, and admins, with an applicant tracking system, interview scheduling and real-time notifications. It includes advanced job search, resume management, application status tracking and a modern responsive UI with analytics dashboards.',
+  image: '/images/recruit-flow.png',
+  technologies: ['Django', 'Python', 'SQLite', 'Bootstrap 5', 'JavaScript', 'HTML5', 'CSS3', 'Web3Forms API', 'Django Auth'],
+  liveLink: 'https://recruitflow-oz8p.onrender.com/',
+  githubLink: 'https://github.com/cvenkataravikiran/RecruitFlow.git'
+},
     { title: 'CareerPath AI: Intelligent Career Roadmap Generator',
        description: 'I created an app that turns career ambiguity into an actionable plan. Using AI, it analyzes a resume or job title to generate a clear roadmap for users. The platform also includes a dynamic dashboard to track tasks and a chat-based AI career coach for instant advice.',
        image: '/images/careerpath-ai.png',
