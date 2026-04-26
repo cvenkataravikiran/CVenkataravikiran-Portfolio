@@ -9,7 +9,7 @@ function Projects() {
   technologies: ['Django', 'Python', 'SQLite', 'Bootstrap 5', 'JavaScript', 'HTML5', 'CSS3', 'Web3Forms API', 'Django Auth'],
   liveLink: 'https://recruitflow-oz8p.onrender.com/',
   githubLink: 'https://github.com/cvenkataravikiran/RecruitFlow.git'
-},
+     },
     { title: 'CareerPath AI: Intelligent Career Roadmap Generator',
        description: 'I created an app that turns career ambiguity into an actionable plan. Using AI, it analyzes a resume or job title to generate a clear roadmap for users. The platform also includes a dynamic dashboard to track tasks and a chat-based AI career coach for instant advice.',
        image: '/images/careerpath-ai.png',
