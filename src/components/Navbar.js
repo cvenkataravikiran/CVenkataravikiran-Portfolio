@@ -23,7 +23,7 @@ function Navbar() {
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto align-items-center">
-            {['Home', 'About', 'Skills', 'Projects', 'Education','Certifications', 'Resume', 'Contact'].map((item) => (
+            {['Home', 'About', 'Skills', 'Projects', 'Education', 'Certifications', 'Resume', 'Contact'].map((item) => (
               <li className="nav-item" key={item}>
                 <a className="nav-link" href={`#${item.toLowerCase()}`} onClick={closeMenu}>
                   {item}
@@ -32,7 +32,7 @@ function Navbar() {
             ))}
             <li className="nav-item ms-2">
               <button
-                className="btn btn-link nav-link p-0 d-flex align-items-center theme-toggle-btn"
+                className="btn btn-link nav-link p-0 d-flex align-items-center theme-toggle-btn icon-rotate"
                 onClick={() => { toggleTheme(); closeMenu(); }}
                 aria-label="Toggle theme"
               >

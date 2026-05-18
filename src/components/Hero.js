@@ -8,11 +8,17 @@ function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const roles = [
-    'Python Backend Developer',
-    'Full Stack Developer',
-    'REST API Builder',
-    'Problem Solver Through Code',
-    'Building Real-World Web Apps'
+  "Aspiring AI/ML Engineer",
+  " Aspiring Data Analyst ",
+  " Skilled in Python, SQL, Excel & Power BI ", 
+  " Building Data-Driven Dashboards & Insights ", 
+  " Python for Data Analysis"
+    // 'Aspiring Data Analyst',
+    // 'Python Backend Developer',
+    // 'Full Stack Developer',
+    // 'REST API Builder',
+    // 'Problem Solver Through Code',
+    // 'Building Real-World Web Apps'
   ];
 
   useEffect(() => {
@@ -55,7 +61,8 @@ function Hero() {
               </div>
 
               <p className="fs-5 fst-italic mb-4 hero-tagline">
-                Building impactful solutions with code.
+              Building data-driven solutions with Python & analytics
+                {/* Building impactful solutions with code. */}
               </p>
 
               <div className="d-flex gap-3">
@@ -78,7 +85,7 @@ function Hero() {
                   </div>
 
                   {/* === UPDATED SECTION START === */}
-                  <div className="code-content">
+                  {/* <div className="code-content">
                     <p className="comment">// Core Skills</p>
                     <p>const skills = {`{`}</p>
                     <p className="property">programming: ['Python', 'SQL', 'JavaScript'],</p>
@@ -87,8 +94,20 @@ function Hero() {
                     <p className="property">tools: ['Git', 'GitHub', 'VS Code'],</p>
                     <p className="property">backend: ['REST APIs', 'API Design', 'JWT Auth'],</p>
                     <p>{`};`}</p>
-                  </div>
+                  </div> */}
                   {/* === UPDATED SECTION END === */}
+                  {/* === UPDATED SECTION START === */}
+<div className="code-content">
+  <p className="comment">// Core Skills</p>
+  <p>const skills = {`{`}</p>
+  <p className="property">data_analysis: ['Excel', 'SQL', 'Python (Pandas, NumPy)'],</p>
+  <p className="property">data_visualization: ['Power BI', 'Matplotlib', 'Seaborn'],</p>
+  <p className="property">databases: ['MySQL', 'SQLite'],</p>
+  <p className="property">tools: ['Git', 'GitHub', 'Jupyter Notebook'],</p>
+  <p className="property">concepts: ['Machine Learning', 'Data Cleaning', 'EDA', 'Dashboarding'],</p>
+  <p>{`};`}</p>
+</div>
+{/* === UPDATED SECTION END === */}
                 </div>
               </div>
             </div>

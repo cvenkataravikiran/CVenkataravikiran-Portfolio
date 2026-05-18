@@ -10,11 +10,24 @@ function Certifications() {
       link: 'https://drive.google.com/file/d/130w7aJqz6OiVSRQmbmzLsLC6AvsX5ST8/view?usp=drivesdk'
     },
     {
-      name: ' Postman API Fundamentals Student Expert',
-      issuer: 'Postman Student Expert Program',
-      date: 'Issued June 2025',
-      link: 'https://badgr.com/public/assertions/jl6fOIfXQjSXeCerNEetSw?identity__email=venkataravikiran.challa%40gmail.com'
+      name: ' Programming in Python',
+      issuer: 'Internshala',
+      date: 'Issued April 2024',
+      link: 'https://trainings.internshala.com/view_certificate/3clng84ygff/2ypowpccia9/'
+
     },
+    {
+      name: ' Data Analytics Essentials',
+      issuer: 'Cisco Networking Academy program.',
+      date: 'Issued November 2025',
+      link: 'https://drive.google.com/file/d/1D2k6QvWAi6WMbX9smg0OMY-XsAxWmgn5/view?usp=sharing'
+    },
+    // {
+    //   name: ' Postman API Fundamentals Student Expert',
+    //   issuer: 'Postman Student Expert Program',
+    //   date: 'Issued June 2025',
+    //   link: 'https://badgr.com/public/assertions/jl6fOIfXQjSXeCerNEetSw?identity__email=venkataravikiran.challa%40gmail.com'
+    // },
     {
       name: ' Introduction to Cloud Computing',
       issuer: 'Simplilearn',
